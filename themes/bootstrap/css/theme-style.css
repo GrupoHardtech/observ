@@ -159,7 +159,7 @@ blockquote small img {
 .title-divider {
   text-align: left;
   margin-bottom: 1em;
-  background: #ffffff url(../img/bg_divider.png) left center repeat-x;
+  background: #ffffff url(../../../img/bg_divider.png) left center repeat-x;
   padding: 0;
 }
 .title-divider span {
@@ -892,7 +892,7 @@ ul#main-menu .dropdown-menu.mega-menu ul a.menu-item:hover {
 }
 #jPanelMenu-menu {
   background-color: #1b1b1b;
-  background-image: url(../img/bg_noise-2.png);
+  background-image: url(../../../img/bg_noise-2.png);
   background-position: left top;
   background-repeat: repeat;
   padding: 0;
@@ -1381,7 +1381,7 @@ ul#main-menu .dropdown-menu.mega-menu ul a.menu-item:hover {
   background-image: linear-gradient(to bottom, #202020 0%, #1b1b1b 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff202020', endColorstr='#ff1b1b1b', GradientType=0);
-  background-image: url(../img/bg_noise-2.png);
+  background-image: url(../../../img/bg_noise-2.png);
   background-position: left top;
   background-repeat: repeat;
   -webkit-box-shadow: 1px 1px 10px rgba(27, 27, 27, 0.6);
@@ -1457,7 +1457,7 @@ ul#main-menu .dropdown-menu.mega-menu ul a.menu-item:hover {
   background-image: linear-gradient(to bottom, #202020 0%, #1b1b1b 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff202020', endColorstr='#ff1b1b1b', GradientType=0);
-  background-image: url(../img/bg_noise-2.png);
+  background-image: url(../../../img/bg_noise-2.png);
   background-position: left top;
   background-repeat: repeat;
   background-color: #1b1b1b;
@@ -1532,7 +1532,7 @@ ul#main-menu .dropdown-menu.mega-menu ul a.menu-item:hover {
     float: left;
   }
   #navigation .slogan {
-    margin: 8px 0 0 1em;
+    margin: 22px 0 0 1em;
     padding: 12px 0 8px 1em;
     border-left: 1px solid #e6e6e6;
     float: left;
@@ -1575,7 +1575,7 @@ ul#main-menu .dropdown-menu.mega-menu ul a.menu-item:hover {
   clear: both;
 }
 #highlighted .inner {
-  background: url(../img/bg_diamond.png) left bottom repeat-x;
+  background: url(../../../img/bg_diamond.png) left bottom repeat-x;
 }
 #highlighted ul.nav-pills {
   margin: 0;
@@ -2704,7 +2704,9 @@ ul.nav-tabs li.active a:hover {
   margin-top: 2em;
 }
 
+/********/
 /*propio*/
+/********/
 
 div .div-img{
   width: 200px;
@@ -2712,6 +2714,15 @@ div .div-img{
 
 .products-list{
   width: 20%
+}
+
+.blog-roll p{
+  text-align: justify;
+  line-height: 200%;
+}
+
+.tags span:first-child {
+  color: #55A79A;
 }
 
 @media (max-width: 992px){
