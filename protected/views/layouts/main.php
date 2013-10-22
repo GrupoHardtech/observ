@@ -123,7 +123,7 @@ switch($this->action->id)
                       <spam>Camera Hidden</spam>
                     </li>
                     <li class="products-list" role="menuitem">
-                      <?php echo CHtml::link('<img src="img/features/HT-IP01C.png" alt="Feature 2" />',array('site/products'),array('class'=>'img-link')); ?>
+                      <?php echo CHtml::link('<img src="img/features/DVR.png" alt="Feature 2" />',array('site/products'),array('class'=>'img-link')); ?>
                       <?php echo CHtml::link('DVR',array('site/products'),array('class'=>'menu-item','tabindex'=>'-1')); ?>
                       <spam>DVR 4 Chanels</spam><br>
                       <spam>DVR 8 Chanels</spam><br>
@@ -132,14 +132,14 @@ switch($this->action->id)
                       <spam>DVR 32 Chanels</spam>
                     </li>
                     <li class="products-list" role="menuitem">
-                      <?php echo CHtml::link('<img src="img/features/HT-IP02SN.png" alt="Feature 2" />',array('site/products'),array('class'=>'img-link')); ?>
+                      <?php echo CHtml::link('<img src="img/features/HVR.png" alt="Feature 2" />',array('site/products'),array('class'=>'img-link')); ?>
                       <?php echo CHtml::link('HVR',array('site/products'),array('class'=>'menu-item','tabindex'=>'-1')); ?>
                       <spam>HVR 4 Chanels</spam><br>
                       <spam>HVR 8 Chanels</spam><br>
                       <spam>HVR 16 Chanels</spam>
                     </li>
                     <li class="products-list" role="menuitem">
-                      <?php echo CHtml::link('<img src="img/features/HT-KB1010.png" alt="Feature 1" />',array('site/products'),array('class'=>'img-link')); ?>
+                      <?php echo CHtml::link('<img src="img/features/NVR.png" alt="Feature 1" />',array('site/products'),array('class'=>'img-link')); ?>
                       <?php echo CHtml::link('NVR',array('site/products'),array('class'=>'menu-item','tabindex'=>'-1')); ?>
                       <spam>NVR 4 Chanels</spam><br>
                       <spam>DVR 8 Chanels</spam><br>
