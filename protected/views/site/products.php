@@ -2,6 +2,8 @@
 $a="";
 $b="";
 $c="";
+$d="";
+$e="";
 switch($id)
 {
   case 1:
@@ -13,6 +15,12 @@ switch($id)
   case 3:
   $c='active';
   break;
+  case 4:
+  $d='active';
+  break;
+  case 5:
+  $e='active';
+  break;
 }
 ?>
 <div class="container">
@@ -21,8 +29,8 @@ switch($id)
         <li class="<?php echo $a; ?>"><a href="#camera" data-toggle="tab">Camera</a></li>
         <li class="<?php echo $b; ?>"><a href="#dvr" data-toggle="tab">DVR</a></li>
         <li class="<?php echo $c; ?>"><a href="#hvr" data-toggle="tab">HVR</a></li>
-        <li><a href="#profile" data-toggle="tab">NVR</a></li>
-        <li><a href="#profile" data-toggle="tab">Accessories</a></li>
+        <li class="<?php echo $d; ?>"><a href="#nvr" data-toggle="tab">NVR</a></li>
+        <li class="<?php echo $e; ?>"><a href="#accessories" data-toggle="tab">Accessories</a></li>
     </ul>
     <div id="myTabContent" class="tab-content">
         <div class="tab-pane fade in <?php echo $a; ?>" id="camera">
@@ -89,12 +97,28 @@ switch($id)
         </div>
         <div class="tab-pane fade in <?php echo $c; ?>" id="hvr">
             <ul class="row list-unstyled block customers">
-                <li class="customer type-design" data-quicksand-id="id-0" data-quicksand-tid="type-design"> <a > <span class="inner-wrapper"> <span class="img-wrapper"><img src="img/customers/HT-8116.png" alt="Google"></span><br>
-                <span class="title">16-CHANNEL DVR HT-8116</span> <span class="description">"VIDEO INPUT: 16 CHANNEL COMPOSITE INPUT WITH 1.0VP-P 75O BNC VIDEO OUTPUT: 2 CHANNEL COMPOSITE INPUT WITH 1.0VP-P 75O BNC"/"AUDIO INPUT:4 CHANNEL 600O RCA AUDIO OUTPUT:1 CHANNEL 600O RCA"/SUPPORTS REALTIME CIF RECORDING/SUPPORTS 16 CH PLAYBACK SIMULTANEOUSLY</span> </span> </a> </li>
-                <li class="customer type-design" data-quicksand-id="id-1" data-quicksand-tid="type-design"> <a > <span class="inner-wrapper"> <span class="img-wrapper"><img src="img/customers/HT-6016.jpg" alt="CSS3"></span><br>
-                <span class="title">16-CHANNEL DVR OBSERV HT-6016</span> <span class="description">OBSERV 16 CHANNEL DVR HT-​​6016 / RECORDER H.264 480 FPS HIGH DEFINITION IMAGE, SUPPORTS 16CH CIF / 16 VIDEO IN / 1 VIDEO OUT / 1 VGA / 2 AUDIO IN / 1 AUDIO OUT / MAX 2TB 2HDD/MAX CMS SOFTWARE, INCLUDED MOUSE, REMOTE CONTROL.</span> </span> </a> </li>
-                <li class="customer type-web" data-quicksand-id="id-2" data-quicksand-tid="type-web"> <a > <span class="inner-wrapper"> <span class="img-wrapper"><img src="img/customers/HT-7016.jpg" alt="Yahoo"></span><br>
-                <span class="title">16-CHANNEL DVR OBSERV HT-7016</span> <span class="description">OBSERV 16 CHANNEL DVR HT-​​7016 / WRITER HIGH DEFINITION IMAGE H.264 480 FPS, SUPPORTS 16CH CIF / 16 VIDEO INPUT / 1 OUTPUT VIDEO / 1 VGA / 2 AUDIO / 4 ALARM INPUT / 1 OUTPUT ALARM / 1 AUDIO / MAX 2HDD / MAX 2TB CMS SOFTWARE INCLUDES MOUSE, REMOTE CONTROL.</span> </span> </a> </li>
+                <li class="customer type-design" data-quicksand-id="id-0" data-quicksand-tid="type-design"> <a > <span class="inner-wrapper"> <span class="img-wrapper"><img src="img/customers/HT-H36004.jpg" alt="Google"></span><br>
+                <span class="title">4-CHANNEL HVR HT-H36004</span> <span class="description">4 CHANNEL HVR HT - H36004 CASE 1U / 4 VIDEO INPUTS, AUDIO, ALARM / COMPRESSION 4 * 960H / DVR, HVR, NVR / PERIMETER DETECTION / VIDEO ANALYSIS 100/120 RECORD FPS.</span> </span> </a> </li>
+                <li class="customer type-design" data-quicksand-id="id-1" data-quicksand-tid="type-design"> <a > <span class="inner-wrapper"> <span class="img-wrapper"><img src="img/customers/HT-H46008.jpg" alt="CSS3"></span><br>
+                <span class="title">8-CHANNEL HVR HT - H46008</span> <span class="description">8 CANALES HVR HT - H46008 CASE 1U / 8 ENTRADAS DE VIDEO / 8 ENTRADAS DE AUDIO</span> </span> </a> </li>
+                <li class="customer type-web" data-quicksand-id="id-2" data-quicksand-tid="type-web"> <a > <span class="inner-wrapper"> <span class="img-wrapper"><img src="img/customers/hvr.png" alt="Yahoo"></span><br>
+                <span class="title">16-CHANNEL HVR HT - H46016</span> <span class="description">16 CHANNEL HVR HT - H46016 CASE 1U 16 VIDEO INPUTS / 4 AUDIO IN / ALARM / COMPRESSION MODE 16 * 960H / PERIMETER DETECTION / VIDEO ANALYSIS / 400/480 RECORD FPS.</span> </span> </a> </li>
+            </ul>
+        </div>
+        <div class="tab-pane fade in <?php echo $d; ?>" id="nvr">
+            <ul class="row list-unstyled block customers">
+                <li class="customer type-design" data-quicksand-id="id-0" data-quicksand-tid="type-design"> <a > <span class="inner-wrapper"> <span class="img-wrapper"><img src="img/customers/nvr.png" alt="Google"></span><br>
+                <span class="title">4-CHANNEL NVR HT-H3644</span> <span class="description">4 CHANNEL NVR HT-​​H3644 / SOLO SPOT 4: * 960H / ANALOG + IP: 2 * D1 + (1 * +1 * 720P 1800P)</span> </span> </a> </li>
+                <li class="customer type-design" data-quicksand-id="id-1" data-quicksand-tid="type-design"> <a > <span class="inner-wrapper"> <span class="img-wrapper"><img src="img/customers/nvr.png" alt="CSS3"></span><br>
+                <span class="title">8-CHANNEL NVR HT-H2648</span> <span class="description">8 CHANNEL NVR HT-​​H2648 / SOLO SPOT 8 * D1 / ANALOG + IP: 2 * D1 / ANALOG + IP2 * D1 + (1 * 1 * 1080P + 720P)</span> </span> </a> </li>
+                <li class="customer type-web" data-quicksand-id="id-2" data-quicksand-tid="type-web"> <a > <span class="inner-wrapper"> <span class="img-wrapper"><img src="img/customers/nvr.png" alt="Yahoo"></span><br>
+                <span class="title">8-CHANNEL NVR HT-H3648</span> <span class="description">8 CHANNEL NVR HT-​​H3648 / 8 CHANNEL ANALOG ONLY * 960H / ANALOG + IP: 4 * D1 + (1 * 1080P +3-720 P)</span> </span> </a> </li>
+            </ul>
+        </div>
+        <div class="tab-pane fade in <?php echo $e; ?>" id="accessories">
+            <ul class="row list-unstyled block customers">
+                <li class="customer type-design" data-quicksand-id="id-0" data-quicksand-tid="type-design"> <a > <span class="inner-wrapper"> <span class="img-wrapper"><img src="img/customers/joystick.png" alt="Google"></span><br>
+                <span class="title">JOYSTICK PTZ HT-KB1010</span> <span class="description">JOYSTICJ PTZ HT-KB1010 LCD SCREEN / RETURN OF CONTROL CENTER / COMMAND KEYS 30/2 FUNCTION KEYS / INTERFACE RS485, RS422, RJ45 / VEL 2400, 4800, 9600, 19200 bps, 2KM.</span> </span> </a> </li>
             </ul>
         </div>
     </div>

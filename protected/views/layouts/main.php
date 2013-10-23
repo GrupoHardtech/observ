@@ -139,15 +139,15 @@ switch($this->action->id)
                       <spam>HVR 16-Channel</spam>
                     </li>
                     <li class="products-list" role="menuitem">
-                      <?php echo CHtml::link('<img src="img/features/NVR.png" alt="Feature 1" />',array('site/products'),array('class'=>'img-link')); ?>
-                      <?php echo CHtml::link('NVR',array('site/products'),array('class'=>'menu-item','tabindex'=>'-1')); ?>
+                      <?php echo CHtml::link('<img src="img/features/NVR.png" alt="Feature 1" />',array('site/products','id'=>'4'),array('class'=>'img-link')); ?>
+                      <?php echo CHtml::link('NVR',array('site/products','id'=>'4'),array('class'=>'menu-item','tabindex'=>'-1')); ?>
                       <spam>NVR 4-Channel</spam><br>
                       <spam>DVR 8-Channel</spam><br>
                       <spam>DVR 16-Channel</spam><br>
                     </li>
                     <li class="products-list" role="menuitem">
-                      <?php echo CHtml::link('<img src="img/features/HT-KB1010.png" alt="Feature 1" />',array('site/products'),array('class'=>'img-link')); ?>
-                      <?php echo CHtml::link('Accessories',array('site/products'),array('class'=>'menu-item','tabindex'=>'-1')); ?>
+                      <?php echo CHtml::link('<img src="img/features/HT-KB1010.png" alt="Feature 1" />',array('site/products','id'=>'5'),array('class'=>'img-link')); ?>
+                      <?php echo CHtml::link('Accessories',array('site/products','id'=>'5'),array('class'=>'menu-item','tabindex'=>'-1')); ?>
                       <spam>Joystick PTZ</spam><br>
                     </li>
                   </ul>
@@ -188,6 +188,12 @@ switch($this->action->id)
             <!--Slide #1 with caption-->
 
             <div class="slide">
+              <div class="slide-content container">
+                <div class="row pull-center"> <img src="img/slides/observ.jpg" alt="Slide 2" data-animate-in="fadeInUp" data-animate-delay="de-02" /> </div>
+              </div>
+            </div>
+
+            <!-- <div class="slide">
               <div class="slide-content">
                 <div class="row">
                   <div class="col-md-7"><img src="img/slides/slide1.png" alt="Slide 1" data-animate-in="bounceInLeft" data-animate-delay="de-08" /></div>
@@ -198,7 +204,7 @@ switch($this->action->id)
                     <a href="#" class="btn btn-lg btn-primary" data-animate-in="bounceInRight" data-animate-delay="de-06">Buy Now</a> </div>
                 </div>
               </div>
-            </div>        
+            </div>    -->     
             
             <!--Slide #3 & so on below--> 
           </div>
@@ -223,7 +229,7 @@ switch($this->action->id)
         </div>
         <div class="col-md-6">
           <ul class="list-inline footer-menu">
-            <li><?php echo CHtml::link('Products',array('site/products'),array()); ?></li>
+            <li><?php echo CHtml::link('Products',array('site/products','id'=>'1'),array()); ?></li>
             <li><?php echo CHtml::link('About',array('site/about'),array()); ?></li>
             <li><?php echo CHtml::link('Contact Us',array('site/contact'),array()); ?></li>
           </ul>
