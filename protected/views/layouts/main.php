@@ -238,7 +238,8 @@ switch($this->action->id)
 <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/jquery-migrate-1.2.1.min.js"></script><!--Legacy jQuery support for quicksand plugin--> 
 
 <!-- Bootstrap JS --> 
-<script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/bootstrap.min.js"></script> 
+<script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/bootstrap.min.js"></script>
+<script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/tab.js"></script>
 
 <!--JS plugins--> 
 <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/flexslider/jquery.flexslider-min.js"></script>
