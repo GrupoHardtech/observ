@@ -181,7 +181,7 @@ switch($this->action->id)
             
             <div class="slide">
               <div class="slide-content container">
-                <div class="row pull-center"> <img src="img/slides/banner.png" alt="Slide 2" data-animate-in="fadeInUp" data-animate-delay="de-02" /> </div>
+                <div class="row pull-center"> <img src="img/slides/banner1.png" alt="Slide 2" data-animate-in="fadeInUp" data-animate-delay="de-02" /> </div>
               </div>
             </div>
 
@@ -189,7 +189,7 @@ switch($this->action->id)
 
             <div class="slide">
               <div class="slide-content container">
-                <div class="row pull-center"> <img src="img/slides/observ.jpg" alt="Slide 2" data-animate-in="fadeInUp" data-animate-delay="de-02" /> </div>
+                <div class="row pull-center"> <img src="img/slides/banner1.png" alt="Slide 2" data-animate-in="fadeInUp" data-animate-delay="de-02" /> </div>
               </div>
             </div>
 
