@@ -125,25 +125,25 @@ switch($this->action->id)
                     <li class="products-list" role="menuitem">
                       <?php echo CHtml::link('<img src="img/features/DVR.png" alt="Feature 2" />',array('site/products','id'=>'2'),array('class'=>'img-link')); ?>
                       <?php echo CHtml::link('DVR',array('site/products','id'=>'2'),array('class'=>'menu-item','tabindex'=>'-1')); ?>
-                      <spam>DVR 4 Chanels</spam><br>
-                      <spam>DVR 8 Chanels</spam><br>
-                      <spam>DVR 16 Chanels</spam><br>
-                      <spam>DVR 24 Chanels</spam><br>
-                      <spam>DVR 32 Chanels</spam>
+                      <spam>DVR 4-Channel</spam><br>
+                      <spam>DVR 8-Channel</spam><br>
+                      <spam>DVR 16-Channel</spam><br>
+                      <spam>DVR 24-Channel</spam><br>
+                      <spam>DVR 32-Channel</spam>
                     </li>
                     <li class="products-list" role="menuitem">
-                      <?php echo CHtml::link('<img src="img/features/HVR.png" alt="Feature 2" />',array('site/products'),array('class'=>'img-link')); ?>
-                      <?php echo CHtml::link('HVR',array('site/products'),array('class'=>'menu-item','tabindex'=>'-1')); ?>
-                      <spam>HVR 4 Chanels</spam><br>
-                      <spam>HVR 8 Chanels</spam><br>
-                      <spam>HVR 16 Chanels</spam>
+                      <?php echo CHtml::link('<img src="img/features/HVR.png" alt="Feature 2" />',array('site/products','id'=>'3'),array('class'=>'img-link')); ?>
+                      <?php echo CHtml::link('HVR',array('site/products','id'=>'3'),array('class'=>'menu-item','tabindex'=>'-1')); ?>
+                      <spam>HVR 4-Channel</spam><br>
+                      <spam>HVR 8-Channel</spam><br>
+                      <spam>HVR 16-Channel</spam>
                     </li>
                     <li class="products-list" role="menuitem">
                       <?php echo CHtml::link('<img src="img/features/NVR.png" alt="Feature 1" />',array('site/products'),array('class'=>'img-link')); ?>
                       <?php echo CHtml::link('NVR',array('site/products'),array('class'=>'menu-item','tabindex'=>'-1')); ?>
-                      <spam>NVR 4 Chanels</spam><br>
-                      <spam>DVR 8 Chanels</spam><br>
-                      <spam>DVR 16 Chanels</spam><br>
+                      <spam>NVR 4-Channel</spam><br>
+                      <spam>DVR 8-Channel</spam><br>
+                      <spam>DVR 16-Channel</spam><br>
                     </li>
                     <li class="products-list" role="menuitem">
                       <?php echo CHtml::link('<img src="img/features/HT-KB1010.png" alt="Feature 1" />',array('site/products'),array('class'=>'img-link')); ?>
