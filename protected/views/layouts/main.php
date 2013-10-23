@@ -115,16 +115,16 @@ switch($this->action->id)
                 <li class="mega-menu-wrapper" role="menuitem"> <!-- <span class="menu-title">Mega Menu with links & text items</span> -->
                   <ul class="row list-unstyled" role="menu">
                     <li class="products-list" role="menuitem">
-                      <?php echo CHtml::link('<img src="img/features/HT-55PIXIM.png" alt="Feature 1" />',array('site/products'),array('class'=>'img-link')); ?>
-                      <?php echo CHtml::link('Camera',array('site/products'),array('class'=>'menu-item','tabindex'=>'-1')); ?>
-                      <spam>Camera IP</spam><br>
-                      <spam>Camera Analogica</spam><br>
-                      <spam>Camera HD</spam><br>
-                      <spam>Camera Hidden</spam>
+                      <?php echo CHtml::link('<img src="img/features/HT-55PIXIM.png" alt="Feature 1" />',array('site/products','id'=>'1'),array('class'=>'img-link')); ?>
+                      <?php echo CHtml::link('Camera',array('site/products','id'=>'1'),array('class'=>'menu-item','tabindex'=>'-1')); ?>
+                      <spam>IP Camera</spam><br>
+                      <spam>Analogic Camera</spam><br>
+                      <spam>HD Camera</spam><br>
+                      <spam>Hidden Camera</spam>
                     </li>
                     <li class="products-list" role="menuitem">
-                      <?php echo CHtml::link('<img src="img/features/DVR.png" alt="Feature 2" />',array('site/products'),array('class'=>'img-link')); ?>
-                      <?php echo CHtml::link('DVR',array('site/products'),array('class'=>'menu-item','tabindex'=>'-1')); ?>
+                      <?php echo CHtml::link('<img src="img/features/DVR.png" alt="Feature 2" />',array('site/products','id'=>'2'),array('class'=>'img-link')); ?>
+                      <?php echo CHtml::link('DVR',array('site/products','id'=>'2'),array('class'=>'menu-item','tabindex'=>'-1')); ?>
                       <spam>DVR 4 Chanels</spam><br>
                       <spam>DVR 8 Chanels</spam><br>
                       <spam>DVR 16 Chanels</spam><br>

@@ -107,11 +107,11 @@ class SiteController extends Controller
 		$this->redirect(Yii::app()->homeUrl);
 	}
 
-	public function actionProducts()
+	public function actionProducts($id)
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('products');
+		$this->render('products', array('id' => $id));
 	}
 
 	public function actionOur()
