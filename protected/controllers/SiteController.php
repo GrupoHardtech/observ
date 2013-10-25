@@ -57,15 +57,30 @@ class SiteController extends Controller
 			$model->attributes=$_POST['ContactForm'];
 			if($model->validate())
 			{
-				$name='=?UTF-8?B?'.base64_encode($model->name).'?=';
-				$subject='=?UTF-8?B?'.base64_encode($model->subject).'?=';
-				$headers="From: $name <{$model->email}>\r\n".
-					"Reply-To: {$model->email}\r\n".
-					"MIME-Version: 1.0\r\n".
-					"Content-Type: text/plain; charset=UTF-8";
+				$mail=Yii::app()->Smtpmail;
+				$mail->SetFrom('sistemas@grupohartech.com',$model->name);
+				$mail->Subject=$model->subject;
+				$msg=$model->body.'<br />'.$model->email.'<br />'.$model->name;
+				$mail->MsgHTML($msg);
+				$mail->charset="UTF-8";
+				$mail->AddAddress('sistemas@grupohardtech.com', "Jean David Demeister");
+				$mail->AddAddress($model->email,"Jean David Demeister");
+				if(!$mail->Send()){
+					Yii::app()->user->setFlash('error','error'.$mail->ErrorInfo);
+				}else{
+					Yii::app()->user->setFlash('success','exit');
+				}
 
-				mail(Yii::app()->params['adminEmail'],$subject,$model->body,$headers);
-				Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
+
+				// $name='=?UTF-8?B?'.base64_encode($model->name).'?=';
+				// $subject='=?UTF-8?B?'.base64_encode($model->subject).'?=';
+				// $headers="From: $name <{$model->email}>\r\n".
+				// 	"Reply-To: {$model->email}\r\n".
+				// 	"MIME-Version: 1.0\r\n".
+				// 	"Content-Type: text/plain; charset=UTF-8";
+
+				// mail(Yii::app()->params['adminEmail'],$subject,$model->body,$headers);
+				// Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
 				$this->refresh();
 			}
 		}

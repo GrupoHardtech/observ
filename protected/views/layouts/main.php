@@ -254,6 +254,10 @@ switch($this->action->id)
 <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/jRespond/js/jRespond.js"></script>
 <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/quicksand/jquery.quicksand.js"></script>
 
+<!-- php correo -->
+<script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/funciones.js"></script>
+<!--  -->
+
 <!--Custom scripts mainly used to trigger libraries --> 
 <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/script.js"></script>
 </body>

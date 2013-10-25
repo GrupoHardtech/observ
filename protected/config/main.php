@@ -6,6 +6,7 @@
 // CWebApplication properties can be configured here.
 
 Yii::setPathOfAlias('bootstrap', dirname(__FILE__) . '/../extensions/bootstrap');
+Yii::setPathOfAlias('bootstrap', dirname(__FILE__) . '/../extensions/smtpmail');
 
 return array(
     'language' => 'es',
@@ -101,4 +102,19 @@ return array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
 	),
+
+// extension de php 
+	'components'=>array(
+		'Smtpmail'=>array(
+			'class'=>'application.extensions.smtpmail.PHPMailer',
+			'Host'=>"smtp.gmail.com",
+			'Username'=>'sistemas@grupohardtech.com',
+			'Password'=>'Sistemas1234',
+			'Mailer'=>'smtp',
+			'Port'=>465,
+			'SMTPAuth'=>true, 
+			),
+		),
+
+
 );

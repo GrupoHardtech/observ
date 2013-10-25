@@ -17,7 +17,50 @@
       <h2 class="title-divider"><span>Contact <span class="de-em">Us</span></span> <small>Ways To Get In Touch</small></h2>
       <div class="row">
         <div class="col-md-6">
-          <form id="contact-form" action="#" role="form">
+          <div class="form">
+
+            <?php $form=$this->beginWidget('CActiveForm', array(
+              'id'=>'contact-form',
+              'enableClientValidation'=>true,
+              'clientOptions'=>array(
+                'validateOnSubmit'=>true,
+                ),
+                )); ?>
+
+                <?php echo $form->errorSummary($model); ?>
+
+                <div class="row">
+                  <?php echo $form->labelEx($model,'name'); ?>
+                  <?php echo $form->textField($model,'name'); ?>
+                  <?php echo $form->error($model,'name'); ?>
+                </div>
+
+                <div class="row">
+                  <?php echo $form->labelEx($model,'email'); ?>
+                  <?php echo $form->textField($model,'email'); ?>
+                  <?php echo $form->error($model,'email'); ?>
+                </div>
+
+                <div class="row">
+                  <?php echo $form->labelEx($model,'subject'); ?>
+                  <?php echo $form->textField($model,'subject',array('size'=>60,'maxlength'=>128)); ?>
+                  <?php echo $form->error($model,'subject'); ?>
+                </div>
+
+                <div class="row">
+                  <?php echo $form->labelEx($model,'body'); ?>
+                  <?php echo $form->textArea($model,'body',array('rows'=>6, 'cols'=>50)); ?>
+                  <?php echo $form->error($model,'body'); ?>
+                </div>
+
+                <div class="row buttons">
+                  <?php echo CHtml::submitButton('Submit'); ?>
+                </div>
+
+                <?php $this->endWidget(); ?>
+
+              </div><!-- form -->
+          <!-- <form id="contact-form" action="#" role="form">
             <div class="form-group">
               <label class="sr-only" for="contact-name">Name</label>
               <input type="text" class="form-control" id="contact-name" placeholder="Name">
@@ -31,7 +74,7 @@
               <textarea rows="12" class="form-control" id="contact-message" placeholder="Message"></textarea>
             </div>
             <input type="button" class="btn btn-primary" value="Send Message">
-          </form>
+          </form> -->
         </div>
         <div class="col-md-6">
           <p><abbr title="Phone"><i class="icon-phone"></i></abbr> +86-20-32071643</p>
