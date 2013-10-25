@@ -6,7 +6,7 @@
 // CWebApplication properties can be configured here.
 
 Yii::setPathOfAlias('bootstrap', dirname(__FILE__) . '/../extensions/bootstrap');
-Yii::setPathOfAlias('bootstrap', dirname(__FILE__) . '/../extensions/smtpmail');
+// Yii::setPathOfAlias('bootstrap', dirname(__FILE__) . '/../extensions/smtpmail');
 
 return array(
     'language' => 'es',
