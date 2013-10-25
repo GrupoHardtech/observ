@@ -109,10 +109,11 @@ return array(
 			'class'=>'application.extensions.smtpmail.PHPMailer',
 			'Host'=>"smtp.gmail.com",
 			'Username'=>'sistemas@grupohardtech.com',
-			'Password'=>'Sistemas1234',
+			'Password'=>'sistemas1234',
 			'Mailer'=>'smtp',
 			'Port'=>465,
-			'SMTPAuth'=>true, 
+			'SMTPAuth'=>true,
+			'SMTPSecure' => 'ssl', 
 			),
 		),
 

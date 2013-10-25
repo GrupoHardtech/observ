@@ -51,6 +51,7 @@ class SiteController extends Controller
 	 */
 	public function actionContact()
 	{
+		try{
 		$model=new ContactForm;
 		if(isset($_POST['ContactForm']))
 		{
@@ -66,10 +67,14 @@ class SiteController extends Controller
 				$mail->AddAddress('sistemas@grupohardtech.com', "Jean David Demeister");
 				$mail->AddAddress($model->email,"Jean David Demeister");
 				if(!$mail->Send()){
-					Yii::app()->user->setFlash('error','error'.$mail->ErrorInfo);
+					// Yii::app()->user->setFlash('error','error'.$mail->ErrorInfo);
+					echo $mail->ErrorInfo;
 				}else{
-					Yii::app()->user->setFlash('success','exit');
+					// Yii::app()->user->setFlash('success','exit');
+					echo 'ok';
 				}
+
+				return;
 
 
 				// $name='=?UTF-8?B?'.base64_encode($model->name).'?=';
@@ -85,6 +90,10 @@ class SiteController extends Controller
 			}
 		}
 		$this->render('contact',array('model'=>$model));
+	}
+	catch(Exception $ex){
+		echo $ex->getMessage();
+	}
 	}
 
 	/**
