@@ -59,13 +59,13 @@ class SiteController extends Controller
 			if($model->validate())
 			{
 				$mail=Yii::app()->Smtpmail;
-				$mail->SetFrom('sistemas@grupohardtech.com',$model->name);
+				$mail->SetFrom($model->email,$model->name);
 				$mail->Subject=$model->subject;
 				$msg=$model->body.'<br />'.$model->email.'<br />'.$model->name;
 				$mail->MsgHTML($msg);
 				$mail->charset="UTF-8";
 				$mail->AddAddress('sistemas@grupohardtech.com', "Jean David Demeister");
-				$mail->AddAddress($model->email,"Jean David Demeister");
+				// $mail->AddAddress($model->email,"Jean David Demeister");
 				if(!$mail->Send()){
 					// Yii::app()->user->setFlash('error','error'.$mail->ErrorInfo);
 					echo $mail->ErrorInfo;
