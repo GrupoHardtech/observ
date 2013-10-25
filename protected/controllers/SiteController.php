@@ -58,7 +58,7 @@ class SiteController extends Controller
 			if($model->validate())
 			{
 				$mail=Yii::app()->Smtpmail;
-				$mail->SetFrom('sistemas@grupohartech.com',$model->name);
+				$mail->SetFrom('sistemas@grupohardtech.com',$model->name);
 				$mail->Subject=$model->subject;
 				$msg=$model->body.'<br />'.$model->email.'<br />'.$model->name;
 				$mail->MsgHTML($msg);
